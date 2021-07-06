@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bulking"
+        tools:context=".Aerobics">
+
+        <TextView
+            android:id="@+id/aerobicsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BULKING"
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:textColor="#E2FF00"
+            android:fontFamily="@font/raleway_medium"
+            android:paddingTop="260dp"
+            android:paddingLeft="36dp"/>
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_toRightOf="@id/aerobicsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Days Workout\nALL LEVELS"
+            android:textSize="16sp"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="#FFFFFF"
+            android:paddingTop="260dp"
+            android:paddingLeft="36dp" />
+
+
+        <ImageView
+            android:id="@+id/beginner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aerobicsText"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/bodybeginner" />
+
+        <ImageView
+            android:id="@+id/inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bodyinter"
+            android:layout_below="@id/beginner"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bodyadvanced"
+            android:layout_below="@id/inter"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:text="WORKOUTS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp"
+            android:textSize="38sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/foryou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workout"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/raleway_medium"
+            android:paddingLeft="50dp"
+            android:text="FOR YOU"
+            android:textColor="#E2FF00"
+            android:textSize="38sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foryou"
+            android:textSize="16dp"
+            android:text="Recommended workouts"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/raleway_medium"
+            android:layout_marginTop="36dp"
+            android:textColor="#FFFFFF"/>
+
+
+        <ImageView
+            android:id="@+id/legs"
+            android:layout_below="@id/foryou"
+            android:layout_width="match_parent"
+            android:layout_marginTop="56dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/legs"
+            />
+
+        <ImageView
+            android:layout_below="@id/legs"
+            android:id="@+id/aerobics"
+            android:layout_marginTop="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aerobics"
+            />
+        <ImageView
+            android:id="@+id/body"
+            android:layout_marginTop="26dp"
+            android:layout_below="@id/aerobics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/body"
+            />
+        <ImageView
+            android:id="@+id/fatloss"
+            android:layout_marginTop="26dp"
+            android:layout_below="@id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fatloss"
+            />
+        <ImageView
+            android:id="@+id/cardio"
+            android:layout_marginTop="26dp"
+            android:layout_below="@id/fatloss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cardio"
+            />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

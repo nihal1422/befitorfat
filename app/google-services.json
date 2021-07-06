@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "833293214171",
+    "firebase_url": "https://befitorfatoriginal.firebaseio.com",
+    "project_id": "befitorfatoriginal",
+    "storage_bucket": "befitorfatoriginal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833293214171:android:32593fd765583b501e87fe",
+        "android_client_info": {
+          "package_name": "com.example.android.befitoffatoriginal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833293214171-e628hebgp235kuirk3jd1bi3kfqkqiab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.befitoffatoriginal",
+            "certificate_hash": "23f3f0b02b3bd3c332ef58c56a5a7d0f83740818"
+          }
+        },
+        {
+          "client_id": "833293214171-97nh47fk8ola2i78t81cs6fk01a1acrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6j000vr1Sts16ryhyTXtEx11JO4b78II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833293214171-97nh47fk8ola2i78t81cs6fk01a1acrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

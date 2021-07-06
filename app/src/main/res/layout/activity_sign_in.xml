@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".SignIn">
+
+
+    <TextView
+    android:id="@+id/getting"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Getting Started"
+    android:textColor="#E2FF00"
+    android:fontFamily="@font/roboto_bold"
+    android:textSize="30sp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"/>
+    <TextView
+        android:id="@+id/create"
+        android:layout_below="@id/getting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account to Continue !"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:paddingLeft="16dp"/>
+    <TextView
+        android:id="@+id/EmailText"
+        android:layout_below="@id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#E2FF00"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingLeft="28dp"/>
+
+    <ImageView
+        android:id="@+id/email_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email_icon"
+        android:paddingTop="10dp"
+        android:paddingLeft="28dp"
+        android:layout_below="@id/EmailText"/>
+
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_icon"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_below="@id/email_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#E2FF00"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingLeft="28dp"/>
+
+    <EditText
+        android:id="@+id/username_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameText"
+        android:layout_marginLeft="28dp"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="28dp"
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_below="@id/username_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#E2FF00"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingLeft="28dp"/>
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordText"
+        android:layout_marginLeft="28dp"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#E2FF00"
+        android:buttonTint="#E2FF00"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/byClicking"
+        android:layout_below="@id/password_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Clicking an account, you agree to our"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/checkbox2"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="14sp"
+        android:paddingLeft="8dp"/>
+    <TextView
+        android:id="@+id/terms"
+        android:layout_below="@id/byClicking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Condition "
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@id/checkbox2"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="16sp"
+        android:paddingLeft="8dp"/>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/terms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFFFFF"
+        android:text="SIGN UP"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+
+    <Button
+        android:id="@+id/googleSignInButton"
+        style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#E2FF00"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:text="Connect with Google"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
